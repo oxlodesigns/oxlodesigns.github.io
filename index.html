@@ -30,21 +30,14 @@ http://www.tooplate.com/view/2085-neuron
 <!-- PRE LOADER -->
 
 
-<center><div id="demo" class="preloader" width="100%" ><img src="load.gif"></div></center>
+<center><div class="preloader" width="100%" ><img src="load.gif"></div></center>
 
 <script>
-	var myVar = setInterval(myTimer, 10000);
-
-	function myTimer() {
-	  var d = new Date();
-	  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
-	}
-    window.onload = function() 
-    {
-        //display loader on page load 
-        $('.loader').fadeOut();
-    }
-
+	setTimeout(function() {
+    $('.preloader').fadeOut('fast');
+}, 1000);
+	
+  
 </script>
 
 <!-- Navigation section  -->
