@@ -31,13 +31,11 @@ http://www.tooplate.com/view/2085-neuron
 
 <<style>
 .loader {
-            position: center;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 100%;
-            z-index: 9999;
-            background-color: #ffffffcf;
+       
+       
+  
+     
+
         }
         .loader img{
             position: relative;
@@ -46,9 +44,15 @@ http://www.tooplate.com/view/2085-neuron
         }
 </style>
 
-<center><div class="loader" ><img src="load.gif"></div></center>
+<center><div id="demo" class="loader" ><img src="load.gif"></div></center>
 
 <script>
+	var myVar = setInterval(myTimer, 10000);
+
+	function myTimer() {
+	  var d = new Date();
+	  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+	}
     window.onload = function() 
     {
         //display loader on page load 
