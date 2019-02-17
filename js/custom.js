@@ -5,7 +5,7 @@
   -------------------------------------------------------------------------------*/
 
   $(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
+    $('.preloader').delay(7000).fadeOut('slow'); // set duration in brackets    
   });
 
 
@@ -24,15 +24,15 @@
   -----------------------------------------------*/
   
   $(window).scroll(function() {
-        if ($(this).scrollTop() > 200) {
-        $('.go-top').fadeIn(200);
+        if ($(this).scrollTop() > 800) {
+        $('.go-top').fadeIn(800);
         } else {
-          $('.go-top').fadeOut(200);
+          $('.go-top').fadeOut(800);
         }
         });   
         // Animate the scroll to top
       $('.go-top').click(function(event) {
         event.preventDefault();
-      $('html, body').animate({scrollTop: 0}, 300);
+      $('html, body').animate({scrollTop: 0}, 600);
       })
 
